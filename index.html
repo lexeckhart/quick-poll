@@ -12,6 +12,20 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css"> -->
 		
+		<script>
+			var today = new Date();
+			var dd = today.getDate();
+			var mm = today.getMonth() + 1;
+			var yyyy = today.getFullYear();
+
+			dd<10 ? dd = '0'+dd : mm = mm
+			mm<10 ? mm = '0'+mm : mm = mm 
+
+			var quickPoll = [{
+				'date': mm + '/' + dd + '/' + yyyy; 
+			}];
+		</script>
+		
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
